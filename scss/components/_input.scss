@@ -1,0 +1,20 @@
+.input {
+  position: relative;
+
+  &__label {
+    top: 16px;
+    left: 42px;
+  }
+
+  &__control {
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+    }
+
+    &:focus::placeholder {
+    }
+  }
+}
