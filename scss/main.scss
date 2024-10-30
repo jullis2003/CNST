@@ -5,11 +5,23 @@
 
 // @import "./utils/utils";
 
+@import "./components/bar-card";
+@import "./components/buttons";
+@import "./components/card";
+@import "./components/founder-card";
 @import "./components/latest-project";
 @import "./components/logo";
+@import "./components/owl-carousel";
 
+@import "./layouts/about-section";
+@import "./layouts/bar-section";
 @import "./layouts/container";
+@import "./layouts/faq-section";
 @import "./layouts/footer";
 @import "./layouts/header";
 @import "./layouts/hero-section";
+@import "./layouts/page";
+@import "./layouts/portfolio-section";
+@import "./layouts/row-section";
 @import "./layouts/section";
+@import "./layouts/team-section";

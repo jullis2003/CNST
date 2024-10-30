@@ -1,0 +1,59 @@
+.card {
+  border-radius: 3px;
+  background-color: var(--color-primary-light);
+  box-shadow: 10px 10px 40px 0px rgba(54, 33, 0, 0.1);
+  transition: background-color 0.4s;
+  position: relative;
+  z-index: 5;
+
+  &--section {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &--section:hover {
+    background-color: var(--color-primary-dark);
+
+    .card__title--section {
+      color: var(--color-primary-light);
+    }
+
+    .card__type {
+      color: var(--color-primary-light);
+      opacity: 0.5;
+    }
+  }
+
+  &__content {
+    padding: 28px 32px;
+  }
+
+  &__title {
+    font-family: "Teko", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+
+    &--service {
+      line-height: 1.2;
+      margin-bottom: 11px;
+    }
+
+    &--section {
+      font-size: 24px;
+      line-height: 1.33;
+      transition: color 0.4s;
+      margin-bottom: 0;
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  &__type {
+    color: var(--color-default-text);
+    transition: color 0.4s, opacity 0.4s;
+    margin-bottom: 0;
+  }
+}

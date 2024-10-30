@@ -1,0 +1,45 @@
+.bar-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  &__name {
+    color: #333;
+    font-family: "Teko", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.33;
+    margin-bottom: 17px;
+    margin-top: 27px;
+  }
+
+  &__statistic {
+    color: var(--color-primary-light);
+    font-size: 20px;
+    line-height: 1.2;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    margin-top: 46px;
+    margin-bottom: 18px;
+
+    span {
+      font-family: "Teko", sans-serif;
+      font-size: 40px;
+      font-weight: 700;
+    }
+  }
+
+  &__description {
+    margin-bottom: 0;
+
+    &--feature {
+      color: var(--color-default-text);
+    }
+
+    &--project {
+      color: var(--color-primary-light);
+      opacity: 0.5;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.bar-section {
+  padding-top: 100px;
+  padding-bottom: 126px;
+
+  &--features {
+    background-color: var(--color-background-light);
+  }
+
+  &--statistics {
+    background-color: var(--color-primary-dark);
+  }
+
+  &__container {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__card {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}

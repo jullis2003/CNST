@@ -1,0 +1,46 @@
+.row-section {
+  background-color: var(--color-background-light);
+  padding-top: 144px;
+  padding-bottom: 96px;
+
+  .row-slider.owl-carousel .owl-stage-outer {
+    box-shadow: 10px 10px 40px 0px rgba(54, 33, 0, 0.1);
+  }
+
+  &__container {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+  }
+
+  &__info {
+    max-width: 464px;
+    margin-top: 106px;
+
+    &--relative {
+      position: relative;
+    }
+  }
+
+  &__slider {
+    max-width: 570px;
+
+    &--relative {
+      position: relative;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+
+    &--slider {
+      top: -48px;
+      left: -72px;
+    }
+
+    &--info {
+      top: 42px;
+      right: 0;
+    }
+  }
+}
