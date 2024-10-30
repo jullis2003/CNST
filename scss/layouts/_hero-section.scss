@@ -26,9 +26,13 @@
     display: flex;
   }
 
+  &__container,
+  &__button-icon {
+    justify-content: center;
+  }
+
   &__container {
     flex-direction: column;
-    justify-content: center;
     height: 100%;
     align-items: flex-start;
     max-width: 470px;
@@ -85,7 +89,6 @@
     background-color: var(--color-secondary-light);
     width: 48px;
     height: 48px;
-    justify-content: center;
     text-align: center;
     border-radius: 50%;
 

@@ -3,13 +3,16 @@
   flex-direction: column;
   justify-content: flex-end;
 
+  &__name,
+  &__statistic {
+    margin-bottom: 16px;
+  }
+
   &__name {
-    color: #333;
     font-family: "Teko", sans-serif;
     font-size: 24px;
     font-weight: 700;
     line-height: 1.33;
-    margin-bottom: 17px;
     margin-top: 27px;
   }
 
@@ -21,7 +24,6 @@
     flex-direction: column;
     gap: 11px;
     margin-top: 46px;
-    margin-bottom: 18px;
 
     span {
       font-family: "Teko", sans-serif;

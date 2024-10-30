@@ -1,0 +1,9 @@
+.pricing-section {
+  background-color: var(--color-background-light);
+
+  &__cards {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+  }
+}

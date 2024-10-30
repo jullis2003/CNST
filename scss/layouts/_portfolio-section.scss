@@ -1,15 +1,10 @@
 .portfolio-section {
-  padding-top: 90px;
-  padding-bottom: 144px;
-
-  &__container {
+  &__buttons,
+  &__cards {
     display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
   &__buttons {
-    display: flex;
     gap: 54px;
     padding: 9px 50px;
     background-image: linear-gradient(
@@ -33,7 +28,6 @@
   }
 
   &__cards {
-    display: flex;
     flex-wrap: wrap;
     gap: 30px;
     position: relative;

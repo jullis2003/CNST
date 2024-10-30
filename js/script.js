@@ -1,6 +1,6 @@
 $(document).ready(function () {
   // --------------------------OWL CAROUSELS-------------------------------------
-  // SERVICES
+  // ROW SLIDER
 
   $(".row-slider").owlCarousel({
     items: 1,
@@ -14,6 +14,17 @@ $(document).ready(function () {
 
   $(".team-carousel").owlCarousel({
     items: 3,
+    nav: false,
+    loop: true,
+    margin: 30,
+    autoplay: true,
+    autoplayTimeout: 3000,
+  });
+
+  // BLOG
+
+  $(".blog-slider").owlCarousel({
+    items: 2,
     nav: false,
     loop: true,
     margin: 30,

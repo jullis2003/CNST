@@ -1,0 +1,10 @@
+.column-section {
+  padding-top: 90px;
+  padding-bottom: 144px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

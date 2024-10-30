@@ -20,6 +20,10 @@
     &--relative {
       position: relative;
     }
+
+    &--blog {
+      max-width: 270px;
+    }
   }
 
   &__slider {
@@ -27,6 +31,10 @@
 
     &--relative {
       position: relative;
+    }
+
+    &--blog {
+      max-width: 770px;
     }
   }
 

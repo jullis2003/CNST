@@ -1,0 +1,38 @@
+.price-card {
+  border-radius: 3px;
+  background-color: var(--color-primary-light);
+  box-shadow: 10px 10px 40px 0px rgba(54, 33, 0, 0.1);
+  padding: 30px 32px;
+  flex-basis: calc((100% - 60px) / 3);
+
+  &__name {
+    font-family: "Teko", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 13px;
+  }
+
+  &__description {
+    color: var(--color-default-text);
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    padding-left: 28px;
+  }
+
+  &__item {
+    list-style-image: url("../../images/list-check.png");
+    font-size: 20px;
+    line-height: 1.6;
+    padding-left: 16px;
+    margin-bottom: 16px;
+  }
+
+  &__price {
+  }
+
+  &__button {
+  }
+}
