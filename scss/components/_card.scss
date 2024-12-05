@@ -47,8 +47,12 @@
   }
 
   &__title {
-    font-size: 40px;
+    font-size: 24px;
     font-weight: 700;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 40px;
+    }
 
     &--service {
       line-height: 1.2;

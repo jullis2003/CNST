@@ -1,7 +1,12 @@
 .row-section {
   background-color: var(--color-background-light);
-  padding-top: 144px;
-  padding-bottom: 96px;
+  padding-top: 74px;
+  padding-bottom: 80px;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 144px;
+    padding-bottom: 96px;
+  }
 
   .row-slider.owl-carousel .owl-stage-outer {
     box-shadow: 10px 10px 40px 0px rgba(54, 33, 0, 0.1);
@@ -9,13 +14,22 @@
 
   &__container {
     display: flex;
-    gap: 30px;
+    gap: 65px;
     justify-content: space-between;
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-desktop) {
+      flex-direction: row;
+      gap: 30px;
+    }
   }
 
   &__info {
     max-width: 464px;
-    margin-top: 106px;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-top: 106px;
+    }
 
     &--relative {
       position: relative;
@@ -27,7 +41,9 @@
   }
 
   &__slider {
-    max-width: 570px;
+    @media screen and (min-width: $bp-desktop) {
+      max-width: 570px;
+    }
 
     &--relative {
       position: relative;
@@ -43,7 +59,11 @@
 
     &--slider {
       top: -48px;
-      left: -72px;
+      left: -10px;
+
+      @media screen and (min-width: $bp-desktop) {
+        left: -72px;
+      }
     }
 
     &--info {

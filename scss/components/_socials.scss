@@ -1,0 +1,23 @@
+.socials {
+  &,
+  &__social {
+    display: flex;
+    align-items: center;
+  }
+
+  gap: 16px;
+
+  &__social {
+    background-color: var(--color-secondary-dark);
+    justify-content: center;
+    text-align: center;
+    padding: 14px;
+    border-radius: 50%;
+
+    i {
+      width: 16px;
+      height: 16px;
+      color: var(--color-primary-light);
+    }
+  }
+}

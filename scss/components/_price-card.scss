@@ -1,16 +1,57 @@
 .price-card {
-  border-radius: 3px;
+  &,
+  &__button {
+    border-radius: 3px;
+  }
+
   background-color: var(--color-primary-light);
   box-shadow: 10px 10px 40px 0px rgba(54, 33, 0, 0.1);
-  padding: 30px 32px;
+  padding: 30px 32px 42px;
   flex-basis: calc((100% - 60px) / 3);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: background-color 0.4s, color 0.4s;
+
+  &--popular,
+  &:hover {
+    background-color: var(--color-primary-dark);
+
+    .price-card__name,
+    .price-card__list,
+    .price-card__price {
+      color: var(--color-primary-light);
+    }
+
+    .price-card__description,
+    .price-card__price span {
+      color: var(--color-other-text);
+    }
+
+    .price-card__button {
+      background-color: var(--color-secondary-light);
+    }
+  }
+
+  &__name,
+  &__price,
+  &__button {
+    font-family: "Teko", sans-serif;
+    font-weight: 700;
+  }
+
+  &__name,
+  &__price {
+    margin-bottom: 12px;
+  }
+
+  &__name,
+  &__button {
+    line-height: 1.2;
+  }
 
   &__name {
-    font-family: "Teko", sans-serif;
     font-size: 40px;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 13px;
   }
 
   &__description {
@@ -20,19 +61,46 @@
 
   &__list {
     padding-left: 28px;
+    margin-bottom: 25px;
+  }
+
+  &__item,
+  &__button {
+    font-size: 20px;
   }
 
   &__item {
     list-style-image: url("../../images/list-check.png");
-    font-size: 20px;
     line-height: 1.6;
     padding-left: 16px;
     margin-bottom: 16px;
   }
 
   &__price {
+    font-size: 56px;
+    line-height: 1.14;
+
+    span {
+      color: var(--color-default-text);
+      font-family: "DM Sans", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 2;
+    }
   }
 
   &__button {
+    background-color: var(--color-background-dark);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &__mark {
+    position: absolute;
+    top: 34px;
+    right: 32px;
   }
 }

@@ -8,6 +8,8 @@
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
 
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -26,7 +28,6 @@
     display: flex;
   }
 
-  &__container,
   &__button-icon {
     justify-content: center;
   }
@@ -35,9 +36,14 @@
     flex-direction: column;
     height: 100%;
     align-items: flex-start;
-    max-width: 470px;
     position: relative;
     color: var(--color-primary-light);
+    justify-content: flex-end;
+
+    @media screen and (min-width: $bp-tablet) {
+      justify-content: center;
+      max-width: 470px;
+    }
   }
 
   &__experience,
@@ -62,10 +68,15 @@
   }
 
   &__title {
-    font-size: 72px;
+    font-size: 56px;
     font-weight: 700;
-    line-height: 1.11;
     margin-bottom: 20px;
+    line-height: 1.14;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 72px;
+      line-height: 1.11;
+    }
   }
 
   &__text {
@@ -100,8 +111,13 @@
   &__icon {
     position: absolute;
     top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    margin-top: -90px;
+    right: -50px;
+
+    @media screen and (min-width: $bp-tablet) {
+      top: 50%;
+      transform: translateY(-50%);
+      margin-top: -90px;
+      right: 0;
+    }
   }
 }

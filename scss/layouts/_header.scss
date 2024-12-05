@@ -8,16 +8,12 @@
 
   &__container,
   &__buttons,
-  &__socials,
-  &__social,
   &__nav-list {
     display: flex;
   }
 
   &__container,
-  &__buttons,
-  &__socials,
-  &__social {
+  &__buttons {
     align-items: center;
   }
 
@@ -26,8 +22,17 @@
     gap: 40px;
   }
 
+  &__container {
+    justify-content: space-between;
+  }
+
   &__nav {
     flex-grow: 1;
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
   }
 
   &__nav-link,
@@ -36,27 +41,20 @@
     color: var(--color-primary-light);
   }
 
-  &__buttons,
-  &__socials {
+  &__buttons {
     gap: 16px;
+
+    .socials {
+      display: none;
+
+      @media screen and (min-width: $bp-desktop) {
+        display: flex;
+      }
+    }
   }
 
-  &__social,
   &__btn-contact {
     background-color: var(--color-secondary-dark);
-  }
-
-  &__social {
-    justify-content: center;
-    text-align: center;
-    padding: 14px;
-    border-radius: 50%;
-
-    i {
-      width: 16px;
-      height: 16px;
-      color: var(--color-primary-light);
-    }
   }
 
   &__btn-contact {
@@ -65,5 +63,15 @@
     font-family: "Teko", sans-serif;
     font-size: 20px;
     font-weight: 700;
+  }
+
+  &__burger-btn {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
   }
 }

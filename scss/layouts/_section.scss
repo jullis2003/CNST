@@ -38,9 +38,14 @@
   }
 
   &__title {
-    font-size: 56px;
+    font-size: 40px;
     font-weight: 700;
-    line-height: 1.14;
+    line-height: 1.2;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 56px;
+      line-height: 1.14;
+    }
 
     &--sided {
       margin-bottom: 25px;
@@ -58,10 +63,39 @@
   &__text {
     color: var(--color-default-text);
     margin-bottom: 30px;
-    max-width: 470px;
+
+    @media screen and (min-width: $bp-desktop) {
+      max-width: 470px;
+    }
 
     &--centered {
       text-align: center;
+    }
+  }
+
+  &__background {
+    position: absolute;
+    width: 100%;
+    height: calc(100% + 54px);
+    background: linear-gradient(135deg, #ffebc9 0%, #f5a623 100%);
+    border-radius: 3px;
+    top: -30px;
+
+    @media screen and (min-width: $bp-tablet) {
+      top: -48px;
+      height: calc(100% + 96px);
+    }
+
+    &--about {
+      left: -30px;
+
+      @media screen and (min-width: $bp-tablet) {
+        left: -56px;
+      }
+    }
+
+    &--contact {
+      right: -56px;
     }
   }
 }

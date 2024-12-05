@@ -1,0 +1,42 @@
+.contact-section {
+  padding-top: 128px;
+  padding-bottom: 128px;
+
+  &__container {
+    align-items: flex-start;
+  }
+
+  &__info {
+    max-width: 370px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__map,
+  &__map-iframe {
+    position: relative;
+  }
+
+  &__map {
+    margin-top: 48px;
+    margin-right: 56px;
+  }
+
+  &__map-iframe {
+    width: 570px;
+    height: 528px;
+    border: none;
+    z-index: 1;
+  }
+
+  &__icon {
+    position: absolute;
+    top: -96px;
+    right: -122px;
+    z-index: -1;
+  }
+}

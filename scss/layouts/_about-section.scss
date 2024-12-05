@@ -1,41 +1,35 @@
 .about-section {
-  padding-top: 128px;
-  padding-bottom: 128px;
+  background-color: var(--color-primary-light) !important;
+  padding-top: 110px;
+  padding-bottom: 80px;
 
-  &__container {
-    display: flex;
-    align-items: flex-start;
-    gap: 30px;
-    justify-content: space-between;
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 174px;
+    padding-bottom: 174px;
   }
 
-  &__video,
-  &__info {
-    position: relative;
+  &__container {
+    align-items: flex-start;
   }
 
   &__video {
-    margin-left: 56px;
+    margin-left: 30px;
+    position: relative;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-left: 56px;
+    }
   }
 
   &__iframe {
-    width: 570px;
-    height: 528px;
-  }
-
-  &__video-background,
-  &__info-icon {
-    position: absolute;
-  }
-
-  &__video-background {
     width: 100%;
-    height: calc(100% + 96px);
-    background: linear-gradient(135deg, #ffebc9 0%, #f5a623 100%);
-    border-radius: 3px;
-    top: -48px;
-    left: -56px;
-    z-index: -1;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    z-index: 1;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 570px;
+    }
   }
 
   &__info {
@@ -46,5 +40,6 @@
   &__info-icon {
     right: 59px;
     top: 28px;
+    position: absolute;
   }
 }
