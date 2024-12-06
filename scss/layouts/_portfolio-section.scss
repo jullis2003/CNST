@@ -4,6 +4,13 @@
     display: flex;
   }
 
+  &__buttons-container {
+    margin-bottom: 48px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
   &__buttons {
     gap: 54px;
     padding: 9px 50px;
@@ -13,7 +20,7 @@
       rgba(245, 166, 35, 0.2) 50%
     );
     border-radius: 24px;
-    margin-bottom: 48px;
+    overflow-x: auto;
   }
 
   &__button {
@@ -21,6 +28,7 @@
     border: none;
     padding: 0;
     color: var(--color-default-text);
+    flex-shrink: 0;
 
     &.button-active {
       color: var(--color-primary-dark);
@@ -35,7 +43,15 @@
 
   &__icon {
     position: absolute;
-    top: -72px;
-    right: -48px;
+    right: 0;
+    top: 775px;
+
+    @media screen and (min-width: $bp-tablet) {
+      top: -28px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      top: -72px;
+    }
   }
 }
