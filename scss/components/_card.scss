@@ -97,6 +97,7 @@
     padding: 2px 8px;
     max-width: max-content;
     transition: background 0.4s, color 0.4s;
+    color: var(--color-primary-dark);
 
     &--latest-project {
       margin-bottom: 6px;
