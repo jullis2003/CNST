@@ -10,26 +10,20 @@ $(document).ready(function () {
     loop: true,
   });
 
-  // TEAM
-
-  $(".team-carousel").owlCarousel({
-    items: 3,
-    nav: false,
-    loop: true,
-    margin: 30,
-    autoplay: true,
-    autoplayTimeout: 3000,
-  });
-
   // BLOG
 
   $(".blog-slider").owlCarousel({
-    items: 2,
+    items: 1,
     nav: false,
     loop: true,
     margin: 30,
     autoplay: true,
     autoplayTimeout: 3000,
+    responsive: {
+      601: {
+        items: 2,
+      },
+    },
   });
 
   // ------------------------------------FAQ ACCORDION-------------------------------

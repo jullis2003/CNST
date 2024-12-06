@@ -60,7 +60,11 @@
 
   &__icon {
     position: absolute;
-    top: -48px;
-    right: -72px;
+    top: -30px;
+    right: -11px;
+
+    @media screen and (min-width: $bp-desktop) {
+      right: -72px;
+    }
   }
 }

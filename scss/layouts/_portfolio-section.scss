@@ -1,17 +1,17 @@
 .portfolio-section {
   &__buttons,
+  &__buttons-container,
   &__cards {
     display: flex;
   }
 
-  &__buttons-container {
+  &__buttons {
     margin-bottom: 48px;
     width: 100%;
-    display: flex;
     justify-content: center;
   }
 
-  &__buttons {
+  &__buttons-container {
     gap: 54px;
     padding: 9px 50px;
     background-image: linear-gradient(

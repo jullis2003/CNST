@@ -1,13 +1,11 @@
 .team-section {
-  .team-carousel.owl-carousel .owl-stage-outer {
-    padding-right: 50px;
-    padding-bottom: 50px;
-    padding-left: 50px;
-  }
-
   &__container,
   &__carousel {
     position: relative;
+  }
+
+  &__carousel {
+    padding-bottom: 106px;
   }
 
   &__icon {
