@@ -7,9 +7,21 @@
     width: 100%;
     margin-top: 37px;
     flex-direction: column;
+    position: relative;
+    flex-wrap: wrap;
 
-    @media screen and (min-width: $bp-desktop) {
+    @media screen and (min-width: $bp-tablet) {
       flex-direction: row;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: -70px;
+    right: -10px;
+
+    @media screen and (min-width: $bp-tablet) {
+      right: -28px;
     }
   }
 }

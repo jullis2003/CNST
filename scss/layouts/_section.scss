@@ -96,7 +96,11 @@
     }
 
     &--contact {
-      right: -56px;
+      right: -30px;
+
+      @media screen and (min-width: $bp-desktop) {
+        right: -56px;
+      }
     }
   }
 }
