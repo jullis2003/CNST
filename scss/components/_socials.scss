@@ -7,6 +7,22 @@
 
   gap: 16px;
 
+  &--desktop {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+    }
+  }
+
+  &--mobile {
+    margin-top: 40px;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
+  }
+
   &__social {
     background-color: var(--color-secondary-dark);
     justify-content: center;

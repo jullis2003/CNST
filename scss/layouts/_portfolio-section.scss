@@ -38,20 +38,15 @@
   &__cards {
     flex-wrap: wrap;
     gap: 30px;
-    position: relative;
   }
 
   &__icon {
     position: absolute;
     right: 0;
-    top: 775px;
+    top: 45%;
 
     @media screen and (min-width: $bp-tablet) {
-      top: -28px;
-    }
-
-    @media screen and (min-width: $bp-desktop) {
-      top: -72px;
+      top: 240px;
     }
   }
 }

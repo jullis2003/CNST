@@ -1,41 +1,33 @@
 .header {
-  padding-top: 16px;
-  position: absolute;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 30;
+  transition: background-color 0.3s;
 
-  &__container,
-  &__buttons,
-  &__nav-list {
-    display: flex;
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  &.scrolled {
+    background-color: var(--color-default-text);
   }
 
   &__container,
   &__buttons {
+    display: flex;
     align-items: center;
   }
 
-  &__container,
-  &__nav-list {
-    gap: 40px;
-  }
-
   &__container {
+    gap: 40px;
     justify-content: space-between;
   }
 
-  &__nav {
-    flex-grow: 1;
-    display: none;
-
-    @media screen and (min-width: $bp-desktop) {
-      display: block;
-    }
-  }
-
-  &__nav-link,
   &__btn-contact {
     text-decoration: none;
     color: var(--color-primary-light);
@@ -43,14 +35,6 @@
 
   &__buttons {
     gap: 16px;
-
-    .socials {
-      display: none;
-
-      @media screen and (min-width: $bp-desktop) {
-        display: flex;
-      }
-    }
   }
 
   &__btn-contact {
@@ -65,13 +49,15 @@
     font-weight: 700;
   }
 
+  &__burger {
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
+  }
+
   &__burger-btn {
     background-color: transparent;
     padding: 0;
     border: none;
-
-    @media screen and (min-width: $bp-desktop) {
-      display: none;
-    }
   }
 }

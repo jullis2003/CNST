@@ -26,6 +26,47 @@ $(document).ready(function () {
     },
   });
 
+  // ----------------------------------------------HEADER SCROLL---------------------------------------
+
+  $(window).on("scroll", function () {
+    if ($(window).scrollTop() > 100) {
+      $(".header").addClass("scrolled");
+    } else {
+      $(".header").removeClass("scrolled");
+    }
+  });
+
+  // ------------------------------------------MOBILE MENU-----------------------------------------------
+
+  $(".header__burger-btn").on("click", function () {
+    $(".mobile-menu").addClass("is-open");
+  });
+
+  $(".mobile-menu__btn-close").on("click", function () {
+    $(".mobile-menu").removeClass("is-open");
+  });
+
+  $(".header-nav__link").on("click", function () {
+    $(".mobile-menu").removeClass("is-open");
+  });
+
+  //---------------------------------------------PORTFOLIO FILTER----------------------------------
+
+  $(".portfolio-section__button").on("click", function () {
+    const filter = $(this).data("filter");
+
+    $(".portfolio-section__button").removeClass("button-active");
+    $(this).addClass("button-active");
+
+    if (filter === "all") {
+      $(".card").removeClass("hidden");
+    } else {
+      $(".card").each(function () {
+        $(this).toggleClass("hidden", !$(this).hasClass(filter));
+      });
+    }
+  });
+
   // ------------------------------------FAQ ACCORDION-------------------------------
 
   $(document).ready(function () {

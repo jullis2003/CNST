@@ -6,6 +6,10 @@
   position: relative;
   z-index: 5;
 
+  &.hidden {
+    display: none;
+  }
+
   &--section {
     text-decoration: none;
     color: inherit;
