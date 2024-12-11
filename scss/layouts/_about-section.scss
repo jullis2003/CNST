@@ -22,12 +22,16 @@
   }
 
   &__iframe {
-    width: 100%;
+    width: calc(100vw - 60px);
     aspect-ratio: 1 / 1;
     position: relative;
     z-index: 1;
 
     @media screen and (min-width: $bp-tablet) {
+      width: calc(100vw - 115px);
+    }
+
+    @media screen and (min-width: $bp-desktop) {
       width: 570px;
     }
   }
