@@ -36,24 +36,32 @@
     margin-top: 48px;
     margin-right: 56px;
     flex-grow: 1;
-    max-width: 626px;
+
+    @media screen and (min-width: $bp-desktop) {
+      max-width: 626px;
+    }
   }
 
   &__map-iframe {
-    width: 100%;
+    width: calc(100vw - 60px);
     aspect-ratio: 1 / 1;
     border: none;
     z-index: 1;
 
     @media screen and (min-width: $bp-tablet) {
+      width: calc(100vw - 115px);
+    }
+
+    @media screen and (min-width: $bp-desktop) {
       height: 528px;
+      width: 100%;
     }
   }
 
   &__icon {
     position: absolute;
     top: -96px;
-    right: -60px;
+    right: -45px;
     z-index: -1;
 
     @media screen and (min-width: $bp-tablet) {
