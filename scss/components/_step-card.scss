@@ -1,8 +1,11 @@
 .step-card {
   position: relative;
   flex-shrink: 0;
-  padding-right: 15px;
   flex-basis: 25%;
+
+  &:not(:last-child) {
+    padding-right: 15px;
+  }
 
   &::before,
   &::after {
@@ -57,6 +60,10 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 20px;
+  }
+
+  &__icon {
+    height: 64px;
   }
 
   &__name {
